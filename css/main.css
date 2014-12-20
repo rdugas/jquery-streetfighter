@@ -16,6 +16,10 @@ div {
 	border-style: solid;
 }
 
+* {
+  outline: red 1px solid;
+}
+
 .ryu {
 float: left;
 }
@@ -41,4 +45,15 @@ float: left;
 }
 .ryu-throwing {
   background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  position: relative;
+  top: 170px;
+  left: -165px;
+  float: left;
 }
