@@ -16,6 +16,7 @@ ryudiv.mouseenter(function(){
     stillryu.show();
 })
 .mousedown(function(){
+	playHadouken();
     console.log("mousedown shoot");
     readyryu.hide();
     throwryu.show();
@@ -28,6 +29,11 @@ ryudiv.mouseenter(function(){
 })
 });
  
+ function playHadouken () {
+  $('#hadouken-sound')[0].volume = 0.5;
+  $('#hadouken-sound')[0].load();
+  $('#hadouken-sound')[0].play();
+}
 
  // stillryu.click(function(){
  //    stillryu.hide();
