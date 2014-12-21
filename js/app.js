@@ -15,12 +15,21 @@ ryudiv.mouseenter(function(){
     readyryu.hide();
     stillryu.show();
 })
+
 .mousedown(function(){
 	playHadouken();
     console.log("mousedown shoot");
     readyryu.hide();
     throwryu.show();
-    hadouken.show();
+    hadouken.show()
+    
+    .animate(
+  	{'left': '300px'},
+  		500,
+  		function() {
+    	$(this).hide();
+    	$(this).css('left', '-212px');
+  	});
 })
 .mouseup(function(){
     console.log("mouseup back");
