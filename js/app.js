@@ -5,7 +5,22 @@ var ryudiv = $(".ryu")
 var stillryu = $(".ryu-still");
 var readyryu = $(".ryu-ready");
 var throwryu = $(".ryu-throwing");
+var coolryu = $(".ryu-cool");
 var hadouken = $(".hadouken");
+var allryu = $(".ryu-hideall");
+
+  $(document).keydown(function(e) {
+    if (e.keyCode == 88) {
+      // playCool();
+      allryu.hide();
+      coolryu.show();
+    }   
+  }).keyup(function(e) {
+    if (e.keyCode == 88) {
+      allryu.hide();
+      stillryu.show();
+    }
+  });
 
 ryudiv.mouseenter(function(){
 	stillryu.hide();
@@ -19,7 +34,7 @@ ryudiv.mouseenter(function(){
 .mousedown(function(){
 	playHadouken();
     console.log("mousedown shoot");
-    readyryu.hide();
+    allryu.hide();
     throwryu.show();
     hadouken.show()
     
@@ -33,7 +48,7 @@ ryudiv.mouseenter(function(){
 })
 .mouseup(function(){
     console.log("mouseup back");
-    throwryu.hide();
+    allryu.hide();
     readyryu.show();
 })
 });
