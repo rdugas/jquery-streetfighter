@@ -24,16 +24,26 @@ div {
 float: left;
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+.hadouken, 
+.ryu-ready, 
+.ryu-still, 
+.ryu-throwing, 
+.ryu-cool,
+.ryu-target,
+.cute-lady {
   background-repeat: no-repeat;
 }
 
-.ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool, .ryu-target, .cute-lady {
 	  width: 659px;
     height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-ready, 
+.ryu-throwing, 
+.ryu-cool, 
+.ryu-target,
+.cute-lady {
   display: none;
 } 
 
@@ -46,6 +56,26 @@ float: left;
 .ryu-throwing {
   background-image: url('../images/ryu-throwing-hadouken.png');
 }
+.ryu-cool {
+  /*background-image: url('../images/ryu-cool.gif');*/
+  background-image: url('../images/ryu-coolmoving.gif');
+}
+
+.ryu-target {
+  background-image: url('../images/ryu-throwing-hadouken.png');
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.cute-lady {
+  background-image: url('../images/cute-cartoon-lady.jpg');
+}
+
+
 .ryu-cool {
   /*background-image: url('../images/ryu-cool.gif');*/
   background-image: url('../images/ryu-coolmoving.gif');
@@ -66,6 +96,25 @@ float: left;
   position: absolute;
   left: 650px;
   height: 425px;
-  width: 600px;
+  width: 400px;
   padding-top: 75px;
 }
+
+.text-content .click {
+  /*font-family: 'Droid Sans', sans-serif;*/
+  font-family: 'Sigmar One', cursive;
+}
+
+.text-content .press {
+  font-family: 'Rock Salt', cursive;
+}
+
+
+.target-content{
+  position: absolute;
+  left: 1050px;
+  /*height: 425px;*/
+  width: 600px;
+}
+
+
