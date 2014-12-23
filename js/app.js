@@ -13,14 +13,19 @@ var cutelady = $(".cute-lady");
 
   $(document).keydown(function(e) {
     if (e.keyCode == 88) {
-      // playCool();
       allryu.hide();
       coolryu.show();
       cutelady.show();
+      $("#fancylady").show();
+      $("#press").hide();
+      $("#click").hide();
     }   
   }).keyup(function(e) {
     if (e.keyCode == 88) {
       allryu.hide();
+      $("#fancylady").hide();
+      $("#press").show();
+      $("#click").show();
       stillryu.show();
     }
   });
@@ -44,7 +49,7 @@ ryudiv.mouseenter(function(){
     hadouken.show()
     
     .animate(
-  	{'left': '300px'},
+  	{'left': '200px'},
   		500,
   		function() {
     	$(this).hide();
@@ -63,6 +68,7 @@ ryudiv.mouseenter(function(){
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
 }
+
 
  // stillryu.click(function(){
  //    stillryu.hide();

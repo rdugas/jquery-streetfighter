@@ -3,14 +3,15 @@ body{
 }
 
 .main{
-  background-color: white;
-  margin-top: 110px;
-  padding-left: 100px;
-  min-width: 1200px;
-  height: 500px;
+    background: white;
+	margin-top: 110px;
+	min-width: 1200px;
+	padding-left: 100px;
+	min-height: 500px;
+	position: relative;
 }
 
-div {
+/*div {
 	border-color: red;
 	border-width: 1px;
 	border-style: solid;
@@ -18,10 +19,13 @@ div {
 
 * {
   outline: red 1px solid;
-}
+}*/
 
 .ryu {
 float: left;
+width: 600px;
+display: table-cell;
+margin-left: -120px;
 }
 
 .hadouken, 
@@ -35,15 +39,16 @@ float: left;
 }
 
 .ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool, .ryu-target, .cute-lady {
-	  width: 659px;
+	/*width: 659px;*/
     height: 494px;
 }
 
 .ryu-ready, 
 .ryu-throwing, 
 .ryu-cool, 
+.cute-lady,
 .ryu-target,
-.cute-lady {
+#fancylady {
   display: none;
 } 
 
@@ -94,27 +99,38 @@ float: left;
 
 .text-content{
   position: absolute;
-  left: 650px;
   height: 425px;
-  width: 400px;
-  padding-top: 75px;
+  width: 20%;
+  padding-top: 50px;
+  display: inline-block;
+  left: 480px;
 }
 
-.text-content .click {
+.text-content #click {
   /*font-family: 'Droid Sans', sans-serif;*/
   font-family: 'Sigmar One', cursive;
+  line-height: 40px;
 }
 
-.text-content .press {
+.text-content #press {
   font-family: 'Rock Salt', cursive;
+  margin-top: 180px;
+  line-height: 40px;
 }
 
+.text-content #fancylady {
+  font-family: 'Droid Sans', sans-serif;
+  line-height: 40px;
+  margin-top: 50px;
+  font-size: 20px;
+}
 
 .target-content{
   position: absolute;
-  left: 1050px;
-  /*height: 425px;*/
+  left: 800px;
+  height: 425px;
   width: 600px;
+  display: inline-block;
 }
 
 
